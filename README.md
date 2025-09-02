@@ -43,4 +43,24 @@ WebUI へのアクセス
 - password = admin
 
 
+## Scheduler
+
+スケジューラの設定
+
+```
+config t
+scheduler task periodic-check-sync
+/devices/device[name='xr-1']
+check-sync
+schedule "*/5 * * * *"
+commit
+```
+
+確認
+
+```
+show scheduler
+```
+
+
 
