@@ -37,4 +37,10 @@ ncs --stop
 ncs
 ```
 
+WebUI へのアクセス
+- http://198.18.134.27:8080/
+- username = admin
+- password = admin
+
+
 
