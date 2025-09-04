@@ -1,4 +1,4 @@
-# 2025 年 9 月 29 日 NSO サクセスコミュニティハンズオンシナリオ
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/575a5c82-8b4a-47c1-941f-cdfbfb573937" /># 2025 年 9 月 29 日 NSO サクセスコミュニティハンズオンシナリオ
 
 ## 事前準備
 ### コンテナの確認
@@ -98,5 +98,11 @@ output.result = f'{str(input.number)} の 2 倍は {str(input.number * 2)} で�
 echo result '"'
 vmstat
 echo '"'
+```
+
+curl での確認
+
+```
+curl -u admin:admin http://198.18.134.27:8080/restconf/operations/custom-action:action/script -X POST
 ```
 
