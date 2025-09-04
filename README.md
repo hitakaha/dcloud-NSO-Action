@@ -71,8 +71,18 @@ cd ncs-run/packages
 ncs-make-package --service-skeleton python --action-example custom-action
 ```
 
+次にパッケージを make します
+
 ```
-ncs-make-package --service-skeleton python --action-example custom-action
+cd custom-action/src
+make
+```
+
+その後 NSO でパッケージを読み込みます
+
+```
+ncs_cli -C -u admin
+packages reload
 ```
 
 ## サンプルアクション double のカスタマイズ
