@@ -76,3 +76,19 @@ YANG の出力を sting に変更後、main.py のアクションロジックを
 ```
 output.result = f'{str(input.number)} の 2 倍は {str(input.number * 2)} です。'
 ```
+
+
+## Action によるスクリプトの実行
+
+サンプルアクションに下記を追加します。
+
+```
+    tailf:action script {
+      tailf: exec "action.sh"
+      output result {
+        type string;
+      }
+    }
+    
+
+```
