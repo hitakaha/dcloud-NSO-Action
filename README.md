@@ -36,7 +36,7 @@ ncs --stop
 ncs
 ```
 
-WebUI へのアクセス
+WebUI へのアクセス（下記 URL を右クリックで新しい TAB で開いてください）
 - http://198.18.134.27:8080/
 - username = admin
 - password = admin
