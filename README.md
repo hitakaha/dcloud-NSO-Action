@@ -108,8 +108,10 @@ ncs-run/packages/custom-action/src/yang/custom-action.yang ファイルを編集
 ```
     tailf:action script {
       tailf:exec "action.sh";
-      output result {
-        type string;
+      output {
+        leaf result {
+          type string;
+        }
       }
     }
 ```
