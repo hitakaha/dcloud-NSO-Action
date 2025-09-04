@@ -177,10 +177,11 @@ curl -u admin:admin http://198.18.134.27:8080/restconf/operations/custom-action:
 
 ## 余裕のある人向け
 
-IOS および ASA のテンプレートを読み込むためにフォルダを移動します。
+Linux に戻り、 IOS および ASA のテンプレートを読み込むためにフォルダを移動します。
+その後 NSO CLI に入ります。
 
 ```
-cd NSO-6.5-free
+cd /home/cisco/NSO-6.5-free
 ncs_cli -C -u admin
 ```
 
