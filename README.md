@@ -217,6 +217,43 @@ devices sync-from
 
 その後、devices/device が拡張されていることを確認できたら完了です。
 
+```
+admin@ncs# devices device xr-1 int-brief             
+result 
+Thu Sep  4 13:29:19.276 UTC
+
+               Intf       Intf        LineP              Encap  MTU        BW
+               Name       State       State               Type (byte)    (Kbps)
+--------------------------------------------------------------------------------
+                Nu0          up          up               Null  1500          0
+     Mg0/RP0/CPU0/0          up          up               ARPA  1514    1000000
+          Gi0/0/0/0          up          up               ARPA  1514    1000000
+          Gi0/0/0/1          up          up               ARPA  1514    1000000
+
+RP/0/RP0/CPU0:xr-1#
+
+
+admin@ncs# devices device ios-1 int-brief 
+result 
+Interface              IP-Address      OK? Method Status                Protocol
+Ethernet0/0            198.18.134.111  YES NVRAM  up                    up      
+Ethernet0/1            10.1.1.1        YES NVRAM  up                    up      
+Ethernet0/2            unassigned      YES NVRAM  administratively down down    
+Ethernet0/3            unassigned      YES NVRAM  administratively down down    
+inside#
+
+
+admin@ncs# devices device asa int-brief  
+result 
+Interface                  IP-Address      OK? Method Status                Protocol
+GigabitEthernet0/0         10.1.1.254      YES CONFIG up                    up  
+GigabitEthernet0/1         20.1.1.254      YES CONFIG up                    up  
+Internal-Data0/0           169.254.1.1     YES unset  up                    up  
+Management0/0              198.18.134.112  YES CONFIG up                    up  
+asa# 
+admin@ncs# 
+```
+
 ハンズオンは以上です。お疲れ様でした。
 
 
