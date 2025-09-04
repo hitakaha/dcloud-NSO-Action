@@ -129,7 +129,13 @@ make
 cd $NCS_DIR/bin
 ```
 
-その後 cat > action.sh と入力したあと下記をコピペしてください。
+その後、下記をタイプすると入力待ちになります。
+
+```
+cat > action.sh
+```
+
+その状態で下記をコピペしてください。
 
 ```
 #!/usr/bin/bash
@@ -141,6 +147,18 @@ echo '"'
 
 その後 CTRL+D を押すことで action.sh が $NCS_DIR/bin に配置されます。
 
+最後に実行属性を付与します。
+
+```
+chmod +x action.sh
+```
+
+最後に packages reload で完了です。
+
+```
+ncs_cli -C -u admin
+packages reload
+```
 
 
 curl での確認
