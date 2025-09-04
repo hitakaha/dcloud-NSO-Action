@@ -1,5 +1,3 @@
-<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/575a5c82-8b4a-47c1-941f-cdfbfb573937" /># 2025 年 9 月 29 日 NSO サクセスコミュニティハンズオンシナリオ
-
 ## 事前準備
 ### コンテナの確認
 
