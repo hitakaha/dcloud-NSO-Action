@@ -89,6 +89,14 @@ output.result = f'{str(input.number)} の 2 倍は {str(input.number * 2)} で�
         type string;
       }
     }
-    
+```
+
+以下のスクリプトを $NCS_DIR/bin に配置します。
 
 ```
+#!/usr/bin/bash
+echo result '"'
+vmstat
+echo '"'
+```
+
