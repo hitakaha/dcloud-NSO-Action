@@ -181,7 +181,7 @@ Linux に戻りパッケージを clone します。
 
 ```
 cd /home/cisco/ncs-run/packages
-git clone https://github.com/mekawaba/NSO-custom-action-2.git
+git clone https://github.com/hitakaha/device-int-brief.git
 ```
 
 その後パッケージを読み込みます。
