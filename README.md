@@ -177,10 +177,48 @@ curl -u admin:admin http://198.18.134.27:8080/restconf/operations/custom-action:
 
 ## 余裕のある人向け
 
+IOS および ASA のテンプレートを読み込むためにフォルダを移動します。
+
 ```
+cd NSO-6.5-free
+ncs_cli -C -u admin
+```
+
+次にテンプレートを読み込みます。
+
+```
+config t
+load merge devices-ios-asa.xml
+commit
+end
+```
+
+その後、デバイスが sync できることを確認します。
+
+```
+devices sync-from
+```
+
+次に Linux に戻りパッケージを clone します。
+
+```
+cd /home/cisco/ncs-run/packages
 git clone https://github.com/mekawaba/NSO-custom-action-2.git
 ```
 
+その後、一度 make clean, make all を実行します。
+
+```
+make clean
+make all
+```
+
+その後パッケージを読み込んだら準備完了です。
+
+```
+ncs_cli -C -u admin
+packages reload
+```
 
 
 
