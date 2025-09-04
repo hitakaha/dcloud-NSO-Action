@@ -177,6 +177,28 @@ curl -u admin:admin http://198.18.134.27:8080/restconf/operations/custom-action:
 
 ## 余裕のある人向け
 
+Linux に戻りパッケージを clone します。
+
+```
+cd /home/cisco/ncs-run/packages
+git clone https://github.com/mekawaba/NSO-custom-action-2.git
+```
+
+その後、一度 make clean, make all を実行します。
+
+```
+make clean
+make all
+```
+
+その後パッケージを読み込みます。
+
+```
+ncs_cli -C -u admin
+packages reload
+```
+
+
 Linux に戻り、 IOS および ASA のテンプレートを読み込むためにフォルダを移動します。
 その後 NSO CLI に入ります。
 
@@ -200,26 +222,10 @@ end
 devices sync-from
 ```
 
-次に Linux に戻りパッケージを clone します。
+その後、devices/device が拡張されていることを確認できたら完了です。
 
-```
-cd /home/cisco/ncs-run/packages
-git clone https://github.com/mekawaba/NSO-custom-action-2.git
-```
+ハンズオンは以上です。お疲れ様でした。
 
-その後、一度 make clean, make all を実行します。
-
-```
-make clean
-make all
-```
-
-その後パッケージを読み込んだら準備完了です。
-
-```
-ncs_cli -C -u admin
-packages reload
-```
 
 
 
