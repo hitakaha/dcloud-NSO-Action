@@ -63,5 +63,16 @@ commit
 show scheduler
 ```
 
+## サンプルアクション double の実行
 
+```
+ncs-make-package --service-skeleton python --action-example custom-action
+```
 
+## サンプルアクション double のカスタマイズ
+
+YANG の出力を sting に変更後、main.py のアクションロジックを下記のように変更します。
+
+```
+output.result = f'{str(input.number)} の 2 倍は {str(input.number * 2) です。}'
+```
