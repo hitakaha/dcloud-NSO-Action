@@ -114,15 +114,28 @@ ncs-run/packages/custom-action/src/yang/custom-action.yang ファイルを編集
     }
 ```
 
-下記をコピペし、最後に CTRL-D を入力します。
+上記のあと忘れずに make しておきます。
+
+```
+cd /home/cisco/ncs-run/packages/custom-action/src
+make
+```
+
+その後、スクリプト配置のため、パスの通ったフォルダに移動します。
 
 ```
 cd $NCS_DIR/bin
+```
+
+下記をコピペし、最後に CTRL-D を入力します。
+
+```
 cat > action.sh
 #!/usr/bin/bash
 echo result '"'
 vmstat
 echo '"'
+
 ```
 
 上記により action.sh が $NCS_DIR/bin に配置されます。
