@@ -103,7 +103,7 @@ packages reload
 
 ## Action によるスクリプトの実行
 
-サンプルアクションに下記を追加します。
+ncs-run/packages/custom-action/src/yang/custom-action.yang ファイルを編集し、サンプルアクションに下記を追加します。
 
 ```
     tailf:action script {
@@ -114,7 +114,18 @@ packages reload
     }
 ```
 
-以下のスクリプトを action.sh という名前で $NCS_DIR/bin に配置します。
+下記をコピペし、最後に CTRL-D を入力します。
+
+```
+cd $NCS_DIR/bin
+cat > action.sh
+#!/usr/bin/bash
+echo result '"'
+vmstat
+echo '"'
+```
+
+上記により action.sh が $NCS_DIR/bin に配置されます。
 
 ```
 #!/usr/bin/bash
