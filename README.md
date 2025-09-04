@@ -24,7 +24,7 @@ ncs_cli -C -u admin
 
 ### WebUI の有効化
 
-VSCode で ncsrun/ncs.conf を編集し、下記 server-alias を追加
+VSCode で ncsrun/ncs.conf を編集し、330 行目の下に下記 server-alias を追加
 
 ```
 <server-alias>198.18.134.27</server-alias>
