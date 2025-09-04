@@ -104,3 +104,13 @@ curl での確認
 curl -u admin:admin http://198.18.134.27:8080/restconf/operations/custom-action:action/script -X POST
 ```
 
+## 余裕のある人向け
+
+```
+git clone https://github.com/mekawaba/NSO-custom-action-2.git
+```
+
+
+
+
+
