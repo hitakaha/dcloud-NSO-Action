@@ -44,7 +44,7 @@ WebUI へのアクセス（下記 URL を右クリックで新しい TAB で開�
 
 ## Scheduler
 
-スケジューラの設定
+ncs_cli -C -u admin で NSO CLI に入り、下記のようにスケジューラを設定します
 
 ```
 config t
