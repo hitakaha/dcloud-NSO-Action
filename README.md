@@ -33,6 +33,7 @@ VSCode で ncsrun/ncs.conf を編集し、330 行目の下に下記 server-alias
 NSO の停止と起動
 
 ```
+cd ncsrun
 ncs --stop
 ncs
 ```
