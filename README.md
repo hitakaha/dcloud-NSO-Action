@@ -184,13 +184,6 @@ cd /home/cisco/ncs-run/packages
 git clone https://github.com/mekawaba/NSO-custom-action-2.git
 ```
 
-その後、一度 make clean, make all を実行します。
-
-```
-make clean
-make all
-```
-
 その後パッケージを読み込みます。
 
 ```
