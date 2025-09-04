@@ -257,7 +257,7 @@ admin@ncs#
 curl での確認
 
 ```
-curl -u admin:admin http://198.18.134.27:8080/restconf/operations/devices/device=xr1/int-brief -X POST
+curl -u admin:admin http://198.18.134.27:8080/restconf/operations/devices/device=xr-1/int-brief -X POST
 ```
 
 ハンズオンは以上です。お疲れ様でした。
