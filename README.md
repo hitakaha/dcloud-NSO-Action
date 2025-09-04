@@ -129,25 +129,19 @@ make
 cd $NCS_DIR/bin
 ```
 
-下記をコピペし、最後に CTRL-D を入力します。
-
-```
-cat > action.sh
-#!/usr/bin/bash
-echo result '"'
-vmstat
-echo '"'
-
-```
-
-上記により action.sh が $NCS_DIR/bin に配置されます。
+その後 cat > action.sh と入力したあと下記をコピペしてください。
 
 ```
 #!/usr/bin/bash
 echo result '"'
 vmstat
 echo '"'
+
 ```
+
+その後 CTRL+D を押すことで action.sh が $NCS_DIR/bin に配置されます。
+
+
 
 curl での確認
 
