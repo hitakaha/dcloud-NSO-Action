@@ -167,7 +167,9 @@ packages reload
 ```
 
 
-curl での確認
+### curl での確認
+
+Linux で下記を実行してください。
 
 ```
 curl -u admin:admin http://198.18.134.27:8080/restconf/operations/custom-action:action/script -X POST
