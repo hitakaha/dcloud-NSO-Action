@@ -153,6 +153,12 @@ echo '"'
 chmod +x action.sh
 ```
 
+下記を実行し、スクリプトが動作することを確認します。
+
+```
+./action.sh
+```
+
 最後に packages reload で完了です。
 
 ```
