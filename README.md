@@ -61,7 +61,15 @@ commit
 show scheduler
 ```
 
-## サンプルアクション double の実行
+## サンプルアクションの作成
+
+Linux に戻り、下記のコマンドを用いてパッケージのスケルトンを作成します。
+
+```
+cd
+cd ncs-run/packages
+ncs-make-package --service-skeleton python --action-example custom-action
+```
 
 ```
 ncs-make-package --service-skeleton python --action-example custom-action
