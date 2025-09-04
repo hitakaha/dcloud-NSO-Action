@@ -93,6 +93,13 @@ YANG の出力を sting に変更後、main.py のアクションロジックを
 output.result = f'{str(input.number)} の 2 倍は {str(input.number * 2)} です。'
 ```
 
+その後 make し、パッケージを読み込みます。
+
+```
+make
+ncs_cli -C -u admin
+packages reload
+```
 
 ## Action によるスクリプトの実行
 
