@@ -85,9 +85,17 @@ ncs_cli -C -u admin
 packages reload
 ```
 
+確認
+
+```
+action double number 2
+```
+
+「result 4」と返ってきたら成功です。
+
 ## サンプルアクション double のカスタマイズ
 
-YANG の出力を sting に変更後、main.py のアクションロジックを下記のように変更します。
+YANG の出力を string に変更後、main.py のアクションロジックを下記のように変更します。
 
 ```
 output.result = f'{str(input.number)} の 2 倍は {str(input.number * 2)} です。'
@@ -100,6 +108,14 @@ make
 ncs_cli -C -u admin
 packages reload
 ```
+
+確認
+
+```
+action double number 2
+```
+
+「result ２の２倍は４です。」と返ってきたら成功です。
 
 ## Action によるスクリプトの実行
 
@@ -166,6 +182,10 @@ ncs_cli -C -u admin
 packages reload
 ```
 
+### NSO CLI での確認
+```
+action script
+```
 
 ### curl での確認
 
@@ -176,6 +196,10 @@ curl -u admin:admin http://198.18.134.27:8080/restconf/operations/custom-action:
 ```
 
 ## 余裕のある人向け
+
+ブラウザから https://198.18.134.101/ にアクセスし、ラボを起動してください
+- Username = cisco
+- Password = C1sco12345!
 
 Linux に戻りパッケージを clone します。
 
